@@ -9,7 +9,7 @@ form.addEventListener('submit', searchForLocation);
 
 let target = 'New Delhi';
 let fetchResult = async (targetLocation) => {
-	let url = `http://api.weatherapi.com/v1/current.json?key=37a8067d7d114fd29ba123735232904&q=${targetLocation}&aqi=no`;
+	let url = `https://api.weatherapi.com/v1/current.json?key=37a8067d7d114fd29ba123735232904&q=${targetLocation}&aqi=no`;
 	const res = await fetch(url);
 	const resJSON = await res.json();
 	console.log(resJSON);
